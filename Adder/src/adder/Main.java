@@ -17,8 +17,15 @@ public class Main {
 
     private static int addArguments(String[] args) {
         int final_result = 0;
-         for (int i = 0; i < args.length; i++) {
-             final_result = final_result + Integer.valueOf(args[i]);
+
+         if (args[0].contains("-")) {
+             for (int i = 1; i < args.length; i++) {
+                 final_result = final_result - Integer.valueOf(args[i]);
+             }
+         } else {
+             for (int i = 0; i < args.length; i++) {
+                 final_result = final_result + Integer.valueOf(args[i]);
+             }
          }
          return final_result;
      }
