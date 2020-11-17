@@ -7,9 +7,13 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Error: Please provide at least two integers to add"); 
+            if (!args[0].matches("^[0-9]+$")) {
+            System.err.println("Error: Invalid Character”);
+        } else {
+            System.err.println("Error: Not enough arguments");
         }
-   }
+    }
+ }
 
     private static int addArguments(String[] args) {
         int final_result = 0;
