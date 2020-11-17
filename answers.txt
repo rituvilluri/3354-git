@@ -1,0 +1,10 @@
+(a) 8 commits - 3 from me and 5 from the original author.
+(b) 4 years ago - Jan 24, 2017
+(c) git log shows the history of commits and shows project history.
+    git status inspects the current working directory and the staging area.
+(d) Unstaged changes can exist in working directory but they are not recorded in version history yet.
+    Untracked files are files which git does not have a record of. It must be added by using the git add command to be pur in the staged area.
+(e) git checkout - updates the working tree and allows to navigate between difference branches
+    git reset - Resets the current branch and updates the index
+(f) Usually an error is displayed in the terminal that shows how many number of commits we are behind by. Uncommitted changes can be lost sometimes. 
+
